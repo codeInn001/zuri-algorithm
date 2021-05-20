@@ -33,6 +33,11 @@ convertFahrToCelsius([2,3])
 
 
 function checkYuGiOh(number) {
+    if(number != Number(number)) {
+        console.log(`invalid parameter: ${number}`)
+        return;
+    }
+
     let array = []
     let array2 = []
     for(let i = 1; i <= number; i++) {
@@ -99,7 +104,7 @@ function checkYuGiOh(number) {
     
     })
 
-    console.log(array,array2)
+    console.log(array)
 }
 
-checkYuGiOh(30)
+checkYuGiOh("going home")
